@@ -1,11 +1,10 @@
-# Servers by ADSubnets
+# AD Replication Topology Graph
 
 ## Summary
-
-Utilisation de PSGraph pour créer un graph qui represente la topology de replication AD.
+Simple script to display AD Replication topology in a graph. Uses PSGraph.
 
 ## Depedances
-Besoin de PSGraph !
+You'll need to install PSGraph from Kevin Marquette and Graphviz! Visit his repo for installation instructions.
 https://github.com/KevinMarquette/PSGraph
 
 ## OutPut Example
