@@ -1,4 +1,4 @@
-$b = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().Sites | Select-Object name,@{l='links';e={$x=$_.name;$_.sitelinks.Sites|where name -ne $x}},@{l='subnets';e={$z="";$_.subnets.name.foreach({$z=$z+"`n"+$_});$z}}
+$b = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().Sites | Select-Object name,@{l='links';e={$x=$_.name;$_.sitelinks.Sites|where name -ne $x}}
 graph sitereplication @{rankdir='LR'}{
     Node @{shape='rect'}
 
@@ -10,4 +10,4 @@ graph sitereplication @{rankdir='LR'}{
 
     Edge @edgeparam
 
-} | Show-PSGraph -LayoutEngine Hierarchical
+} | Show-PSGraph
