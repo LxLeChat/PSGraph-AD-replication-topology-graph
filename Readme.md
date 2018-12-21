@@ -7,3 +7,6 @@ Utilisation de PSGraph pour créer un graph qui represente la topology de replic
 ## Depedances
 Besoin de PSGraph !
 https://github.com/KevinMarquette/PSGraph
+
+## OutPut Example
+![OutPut](/topologyXX.png)
